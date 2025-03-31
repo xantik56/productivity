@@ -6,7 +6,7 @@ import { browserslistToTargets } from 'lightningcss';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/productivity/',
+  base: '/productivity',
   css: {
     transformer: 'lightningcss',
     lightningcss: {

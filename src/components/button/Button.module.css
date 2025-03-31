@@ -1,0 +1,54 @@
+.root {
+  align-items: center;
+  background: var(--color-main-dark);
+  border: none;
+  border-radius: 4px;
+  color: var(--color-primary);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
+  height: 44px;
+  justify-content: center;
+  padding: 0 8px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.root:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.root:focus-visible {
+  outline: 2px solid var(--color-main-dark);
+  outline-offset: 2px;
+}
+
+.root:hover:not(:disabled) {
+  background-color: oklch(33% 0.0343 263.94deg / 80%);
+}
+  
+.root:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.root.isLoading {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  border: 2px solid rgb(255 255 255 / 30%);
+  border-radius: 50%;
+  border-top-color: var(--color-primary);
+  height: 20px;
+  width: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,13 @@
+:root {
+    --base-font-size: 15px;
+    --color-border: oklch(86% 0.0208 264.46deg);
+    --color-border-hover: oklch(
+        86% 0.0208 264.46deg / 50%
+    );
+    --color-primary: oklch(100% 0 0deg);
+    --color-text: var(--color-primary);
+    --color-error: oklch(69% 0.1987 23.91deg);
+    --color-main-dark: oklch(33% 0.0343 263.94deg);
+    --color-light-blue: oklch(86% 0.0208 264.46deg);
+    --color-light-blue-2: oklch(68% 0.0289 262.3deg); 
+}

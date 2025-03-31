@@ -1,0 +1,60 @@
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/inter-v18-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/inter-v18-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/inter-v18-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Lexend Peta';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/lexend-peta-v29-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Lexend Peta';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/lexend-peta-v29-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Lexend Peta';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/lexend-peta-v29-latin-700.woff2') format('woff2');
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: oklch(33% 0.0343 263.94deg);
+  font-family: Inter, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+

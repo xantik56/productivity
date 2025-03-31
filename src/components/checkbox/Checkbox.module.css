@@ -1,0 +1,46 @@
+.root {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 0;
+  width: fit-content;
+}
+
+.input {
+  appearance: none;
+  background: var(--color-main-dark);
+  border-radius: 2px;
+  cursor: pointer;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+
+.label {
+  color: var(--color-primary);
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.input::after {
+  background-image: url("/check.svg");
+  background-repeat: no-repeat;
+  background-size: 18px;
+  color: var(--color-primary);
+  content: "";
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+}
+
+.input:checked::after {
+  height: 18px;
+  transition: 500ms;
+  width: 18px;
+}
+
+.input:focus-visible {
+  outline: 2px solid var(--color-main-dark);
+  outline-offset: 2px;
+}
